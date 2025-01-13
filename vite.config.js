@@ -4,7 +4,7 @@ import tailwindcss from 'tailwindcss';
 
 export default defineConfig({
   plugins: [react()],
-  base: "https://derrickeberlein.dev/",
+  base: "https://tomodachistreet.org/",
   build: {
     outDir: 'dist',
   },
@@ -16,11 +16,6 @@ export default defineConfig({
       scss: {
         additionalData: `@import "./src/styles/variables.scss";`,
       },
-    },
-  },
-  resolve: {
-    alias: {
-      tagcloud: '/node_modules/tagcloud/jquery.tagcloud.js',
     },
   },
   define: {

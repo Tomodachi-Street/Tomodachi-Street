@@ -1,0 +1,30 @@
+.radio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background: rgba(34, 34, 34, 0.8); /* Dark semi-transparent background */
+    color: #fff; /* White text */
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .radio strong {
+    color: #f39c12; /* Highlight color for the current section */
+  }
+  
+  .radio:hover {
+    background: rgba(243, 156, 18, 0.9); /* Slightly brighter background on hover */
+    transform: scale(1.05); /* Subtle zoom effect */
+  }
+  
+  .radio-container-wrapper {
+    position: fixed;
+    top: 10%; /* Adjust position as needed */
+    left: 20px; /* Keep it near the edge of the screen */
+    z-index: 100; /* Ensure it stays on top of other elements */
+  }
+  

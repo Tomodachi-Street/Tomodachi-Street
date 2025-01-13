@@ -1,91 +1,93 @@
-/* Ensure the root allows proper layout */
-html, body {
+/* General styles */
+body {
   margin: 0;
-  padding: 0;
-  height: 100%;
-  overflow: auto; /* Allow scrolling for the entire page */
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-  overscroll-behavior: contain;
+  font-family: Arial, sans-serif;
+  color: #333;
 }
 
-*, *::before, *::after {
-  box-sizing: inherit;
-}
-
-/* Main container styles */
-#root {
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
-  z-index: 0;
-  background-image: radial-gradient(ellipse at top , #080e21 0%,  #1b2735 95%);
-  scroll-behavior: smooth;
-  overscroll-behavior: contain;
-}
-
-/* Content container */
-.content {
-  display: flex;
-  flex-direction: row;
-  flex-grow: 1;
-  gap: 0.5rem;
-  z-index: 5;
-  scroll-behavior: smooth;
-}
-
-/* Sticky radio container */
-.radio-container-wrapper {
-  position: sticky; /* Keep it in place while scrolling */
-  top: 0; /* Stick to the top of the viewport */
-  height: 100vh; /* Full viewport height to cover the screen */
-  z-index: 30; /* Ensure it stays above other elements */
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding-right: .5rem;
-}
-
-
-/* Sections container */
-.sections-container {
-  flex-grow: 1;
-  overflow: hidden; /* Allow sections to flow within the page */
-  padding-left: .5rem;
-  scroll-behavior: smooth;
-}
-
-/* Ensure the Header spans the top */
 .header-container {
-  width: 100%;
-  position: relative;
+  position: fixed;
   top: 0;
-  z-index: 10;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 1rem 0;
-  transition: transform 0.3s ease-in-out;
-  scroll-behavior: smooth;
+  width: 100%;
+  background: rgba(34, 34, 34, 0.9);
+  transition: transform 0.3s;
+  z-index: 1000;
 }
 
 .header-container.hidden {
-  transform: translateY(-100%); /* Slide the header out of view */
-  opacity: 0; /* Optional: fade the header out */
+  transform: translateY(-100%);
 }
 
 .header-container.visible {
-  transform: translateY(0); /* Bring the header back into view */
-  opacity: 1; /* Optional: fade the header in */
+  transform: translateY(0);
 }
 
-/* Mobile styles */
-@media screen and (max-width: 768px) {
-  .radio-container-wrapper {
-    display: none;
-  }
-  .body {
-    scroll-behavior: smooth;
-  }
+/* Navbar */
+.header .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  color: white;
+}
+
+.header .nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.header .nav-links li {
+  margin: 0 1rem;
+}
+
+.header .nav-links a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.header .nav-links a.active,
+.header .nav-links a:hover {
+  color: #f39c12;
+}
+
+/* Sections */
+.sections-container {
+  padding-top: 100px;
+}
+
+.section {
+  height: 100vh;
+  padding: 2rem;
+  background: #f4f4f4;
+  border-bottom: 1px solid #ddd;
+}
+
+.section:nth-child(odd) {
+  background: #fff;
+}
+
+.section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.section p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* Radio */
+.radio-container-wrapper {
+  position: fixed;
+  top: 100px;
+  left: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+.radio strong {
+  color: #f39c12;
 }

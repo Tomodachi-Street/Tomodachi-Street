@@ -3,11 +3,11 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-<h3 align="center">Derrick Eberlein's Personal Website</h3>
+<h3 align="center">Tomodachi Street</h3>
 
 </div>
 
-Welcome to the repository for my personal website, hosted at [derrickeberlein.dev](https://derrickeberlein.dev/). This portfolio showcases my skills as a developer, including my projects, resume, and contact options. It's designed to provide hiring managers and recruiters with a quick and convenient snapshot of my capabilities.
+Welcome to the repository for the Tomodachi Street website, hosted at [tomodachistreet.org](https://tomodachistreet.org/). This portfolio showcases my skills as a developer, including my projects, resume, and contact options. It's designed to provide hiring managers and recruiters with a quick and convenient snapshot of my capabilities.
 
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -28,11 +28,7 @@ Welcome to the repository for my personal website, hosted at [derrickeberlein.de
 <!-- Features -->
 ## Features
 
-- **Portfolio Section**: Highlights my key projects with descriptions and links, each featuring a GIF preview.
-- **Resume Download**: Easily access a downloadable PDF version of my resume.
-- **Contact Form**: Option to email me directly.
-- **Custom CSS Animations**: Enhances the user experience with smooth animations.
-- **Responsive Design**: Optimized for viewing on all device sizes, from mobile to desktop.
+- **Add Later**
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -52,7 +48,7 @@ To run this project locally:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/ReverendTrivium/personal_website.git
+   git clone https://github.com/Tomodachi-Street/TomodachiStreet_Website.git
    ```
 
 2. Navigate to the project directory:
@@ -89,7 +85,6 @@ This project is primarily for personal use and professional growth. However, fee
 
 ---
 
-Feel free to explore the codebase or visit the live site at [derrickeberlein.dev](https://derrickeberlein.dev/).
+Feel free to explore the codebase or visit the live site at [tomodachistreet.org](https://tomodachistreet.org/).
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-

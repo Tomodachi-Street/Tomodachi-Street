@@ -1,9 +1,9 @@
 {
-  "name": "personal_website",
+  "name": "tomodachistreet",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://reverendtrivium.github.io/personal_website/",
+  "homepage": "https://tomodachistreet.org/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
