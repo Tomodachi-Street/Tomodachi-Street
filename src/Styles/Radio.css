@@ -19,12 +19,13 @@
   .radio:hover {
     background: rgba(243, 156, 18, 0.9); /* Slightly brighter background on hover */
     transform: scale(1.05); /* Subtle zoom effect */
+
   }
   
   .radio-container-wrapper {
     position: fixed;
     top: 10%; /* Adjust position as needed */
-    left: 20px; /* Keep it near the edge of the screen */
+    right: 20px; /* Keep it near the edge of the screen */
     z-index: 100; /* Ensure it stays on top of other elements */
   }
   
