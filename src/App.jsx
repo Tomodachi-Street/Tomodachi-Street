@@ -58,9 +58,6 @@ const App = () => {
 
       {/* Main content container */}
       <div className="content">
-        <div className="radio-container-wrapper">
-          <Radio nav={nav} />
-        </div>
 
         <div className="sections-container">
           {['About', 'Events', 'Gallery', 'Contact'].map((section) => (
