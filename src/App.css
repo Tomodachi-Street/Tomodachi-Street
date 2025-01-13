@@ -1,0 +1,91 @@
+/* Ensure the root allows proper layout */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: auto; /* Allow scrolling for the entire page */
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  overscroll-behavior: contain;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+/* Main container styles */
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  z-index: 0;
+  background-image: radial-gradient(ellipse at top , #080e21 0%,  #1b2735 95%);
+  scroll-behavior: smooth;
+  overscroll-behavior: contain;
+}
+
+/* Content container */
+.content {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  gap: 0.5rem;
+  z-index: 5;
+  scroll-behavior: smooth;
+}
+
+/* Sticky radio container */
+.radio-container-wrapper {
+  position: sticky; /* Keep it in place while scrolling */
+  top: 0; /* Stick to the top of the viewport */
+  height: 100vh; /* Full viewport height to cover the screen */
+  z-index: 30; /* Ensure it stays above other elements */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-right: .5rem;
+}
+
+
+/* Sections container */
+.sections-container {
+  flex-grow: 1;
+  overflow: hidden; /* Allow sections to flow within the page */
+  padding-left: .5rem;
+  scroll-behavior: smooth;
+}
+
+/* Ensure the Header spans the top */
+.header-container {
+  width: 100%;
+  position: relative;
+  top: 0;
+  z-index: 10;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1rem 0;
+  transition: transform 0.3s ease-in-out;
+  scroll-behavior: smooth;
+}
+
+.header-container.hidden {
+  transform: translateY(-100%); /* Slide the header out of view */
+  opacity: 0; /* Optional: fade the header out */
+}
+
+.header-container.visible {
+  transform: translateY(0); /* Bring the header back into view */
+  opacity: 1; /* Optional: fade the header in */
+}
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+  .radio-container-wrapper {
+    display: none;
+  }
+  .body {
+    scroll-behavior: smooth;
+  }
+}
