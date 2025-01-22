@@ -1,93 +1,41 @@
-/* General styles */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  color: #333;
+  font-family: "Bangers";
 }
 
-.header-container {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background: rgba(34, 34, 34, 0.9);
-  transition: transform 0.3s;
-  z-index: 1000;
-}
-
-.header-container.hidden {
-  transform: translateY(-100%);
-}
-
-.header-container.visible {
-  transform: translateY(0);
-}
-
-/* Navbar */
-.header .navbar {
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
-  color: white;
+  padding: 1rem;
+  background: #222;
+  color: #fff;
 }
 
-.header .nav-links {
-  list-style: none;
-  display: flex;
-}
-
-.header .nav-links li {
+.header .nav a {
   margin: 0 1rem;
-}
-
-.header .nav-links a {
   color: white;
   text-decoration: none;
-  transition: color 0.3s;
 }
 
-.header .nav-links a.active,
-.header .nav-links a:hover {
-  color: #f39c12;
-}
-
-/* Sections */
-.sections-container {
-  padding-top: 100px;
-}
-
-.section {
-  height: 100vh;
-  padding: 2rem;
-  background: #f4f4f4;
-  border-bottom: 1px solid #ddd;
-}
-
-.section:nth-child(odd) {
-  background: #fff;
-}
-
-.section h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
-
-.section p {
-  font-size: 1.2rem;
-  color: #555;
-}
-
-/* Radio */
-.radio-container-wrapper {
-  position: fixed;
-  top: 100px;
-  left: 20px;
-  background: rgba(0, 0, 0, 0.7);
+.header .social-icons a {
+  margin: 0 0.5rem;
   color: white;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
+  font-size: 1.5rem;
 }
 
-.radio strong {
-  color: #f39c12;
+.hero {
+  text-align: center;
+  background: #000000;
+  padding: 5rem 1rem;
+}
+
+.past-events {
+  padding: 2rem;
+}
+
+.past-events .events-gallery img {
+  width: 100%;
+  max-width: 300px;
+  margin: 0.5rem;
 }

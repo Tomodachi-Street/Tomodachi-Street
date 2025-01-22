@@ -1,0 +1,75 @@
+body {
+    font-family: "Bangers";
+    margin: 0;
+    height: 100vh; /* Ensures the gradient covers the full screen */
+    background: linear-gradient(45deg, #ff69b4, #ffb6c1, #87cefa);
+    background-size: 400% 400%; /* Enlarges the background to allow smooth gradient animation */
+    animation: gradientAnimation 10s ease infinite;
+}
+
+/* Define the animation */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+  .h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    font-family: "Bangers";
+    font-weight: 400;
+    font-style: normal;
+  }
+.row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.team-card-wrapper {
+    margin: 15px;
+}
+
+.team-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 3px solid #ff69b4;
+    margin-bottom: 10px;
+}
+
+.team-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-top: 10px;
+}
+
+.team-role {
+    font-size: 1rem;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.team-social {
+    font-size: 0.9rem;
+    color: #ff69b4;
+}
+
+.team-card {
+    text-decoration: none;
+    display: block;
+    color: inherit;
+    transition: transform 0.2s;
+}
+
+.team-card:hover {
+    transform: scale(1.05);
+}

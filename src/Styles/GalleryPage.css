@@ -1,0 +1,37 @@
+body {
+  font-family: "Bangers";
+  margin: 0;
+  height: 100vh; /* Ensures the gradient covers the full screen */
+  background: linear-gradient(45deg, #ff69b4, #ffb6c1, #87cefa);
+  background-size: 400% 400%; /* Enlarges the background to allow smooth gradient animation */
+  animation: gradientAnimation 10s ease infinite;
+}
+
+/* Define the animation */
+@keyframes gradientAnimation {
+0% {
+    background-position: 0% 50%;
+}
+50% {
+    background-position: 100% 50%;
+}
+100% {
+    background-position: 0% 50%;
+}
+}
+  
+  .hero {
+    text-align: center;
+    background: #ff37f2;
+    padding: 5rem 1rem;
+  }
+  
+  .past-events {
+    padding: 2rem;
+  }
+  
+  .past-events .events-gallery img {
+    width: 100%;
+    max-width: 300px;
+    margin: 0.5rem;
+  }
