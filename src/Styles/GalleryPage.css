@@ -19,19 +19,15 @@ body {
     background-position: 0% 50%;
 }
 }
-  
-  .hero {
+
+  .h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  font-family: "Bangers";
+  font-style: normal;
+  }
+
+  .gallery {
     text-align: center;
-    background: #ff37f2;
     padding: 5rem 1rem;
-  }
-  
-  .past-events {
-    padding: 2rem;
-  }
-  
-  .past-events .events-gallery img {
-    width: 100%;
-    max-width: 300px;
-    margin: 0.5rem;
   }
