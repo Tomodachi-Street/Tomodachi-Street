@@ -75,7 +75,55 @@ body {
 }
 
 @media (min-width: 768px) {
-    main {
+  main {
+    flex-direction: row;
+  }
+}
+
+.team-page {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 2rem;
+  }
+  
+  .team-logo-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  
+  .team-logo {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Desktop layout with logo on right */
+  @media (min-width: 992px) {
+    .team-page {
       flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+  
+    .team-content {
+      flex: 1;
+    }
+  
+    .team-logo-container {
+      flex: 0 0 auto;
+      align-self: center;
+      margin-top: 0;
+      padding-left: 3rem;
+    }
+  
+    .team-logo {
+      max-width: 350px;
     }
   }
+  
+  .team-logo {
+    filter: drop-shadow(0 0 6px #ff69b4);
+  }
+    

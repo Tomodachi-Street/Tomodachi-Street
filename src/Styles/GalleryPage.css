@@ -1,39 +1,83 @@
 body {
   font-family: "Bangers";
   margin: 0;
-  height: 100vh; /* Ensures the gradient covers the full screen */
+  height: 100vh;
   background: linear-gradient(45deg, #ff69b4, #ffb6c1, #87cefa);
-  background-size: 400% 400%; /* Enlarges the background to allow smooth gradient animation */
+  background-size: 400% 400%;
   animation: gradientAnimation 10s ease infinite;
 }
 
-/* Define the animation */
+/* Animation */
 @keyframes gradientAnimation {
-0% {
-    background-position: 0% 50%;
-}
-50% {
-    background-position: 100% 50%;
-}
-100% {
-    background-position: 0% 50%;
-}
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
-  .h1 {
-  font-size: 2.5rem;
+/* Header layout */
+.gallery-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 2rem 0 2rem;
+  flex-wrap: wrap;
+}
+
+.gallery-title {
+  font-size: 3rem;
+  margin: 0;
+  color: white;
+}
+
+.gallery-logo img {
+  max-height: 120px;
+  height: auto;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Gallery layout */
+.gallery-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 3rem 1rem;
+}
+
+.gallery-item {
   text-align: center;
-  font-family: "Bangers";
-  font-style: normal;
-  }
+  max-width: 300px;
+}
 
-  .gallery {
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  border: 4px solid #f50685;
+  border-radius: 1rem;
+  transition: transform 0.2s ease-in-out;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.03);
+}
+
+.gallery-label {
+  margin-top: 0.75rem;
+  font-size: 1.5rem;
+  color: white;
+  text-transform: uppercase;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .gallery-header {
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    padding: 5rem 1rem;
   }
 
-  @media (min-width: 768px) {
-    main {
-      flex-direction: row;
-    }
+  .gallery-logo img {
+    margin-top: 1rem;
   }
+}

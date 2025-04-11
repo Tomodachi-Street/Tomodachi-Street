@@ -5,6 +5,8 @@ import EventsPage from './pages/EventsPage';
 import GalleryPage from './pages/GalleryPage';
 import TeamPage from './pages/TeamPage';
 import Header from './components/Header';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import './App.css';
 
 const App = () => (

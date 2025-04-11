@@ -1,30 +1,285 @@
-/* General styles */
-.header {
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Bangers:400&display=swap');
+
+/* Bootstrap Icons */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css");
+
+/* -------------------- HEADER STYLES -------------------- */
+.header-logo {
+  height: 100%;
+  max-height: 60px;
+  width: auto;
+  object-fit: contain;
+}
+
+.headerlogo {
+  display: none;
+}
+
+.headerlogo img {
+  width: 120px;
+  height: auto;
+}
+
+/* -------------------- NAVBAR STYLES -------------------- */
+.collapsing {
+  transition: height 0.35s ease;
+}
+
+.collapse:not(.show) {
+  display: none;
+}
+
+.navbar-toggler {
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.navbar-toggler-icon {
+  display: inline-block;
+  width: 30px;
+  height: 20px;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  background-image: none !important;
+}
+
+.navbar-toggler-icon .bar {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background-color: #f50685;
+  transition: all 0.3s ease-in-out;
+  border-radius: 1px;
+}
+
+.navbar-toggler-icon .top-bar {
+  top: 0;
+}
+
+.navbar-toggler-icon .middle-bar {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.navbar-toggler-icon .bottom-bar {
+  bottom: 0;
+}
+
+/* Animate to X when open */
+.navbar-toggler.open .top-bar {
+  transform: rotate(45deg);
+  top: 10px;
+}
+
+.navbar-toggler.open .middle-bar {
+  opacity: 0;
+}
+
+.navbar-toggler.open .bottom-bar {
+  transform: rotate(-45deg);
+  bottom: 10px;
+}
+
+.navbar,
+.navbar > .container,
+.navbar > .container-fluid,
+.navbar > .container-sm,
+.navbar > .container-md,
+.navbar > .container-lg,
+.navbar > .container-xl,
+.navbar > .container-xxl {
+  --ar-navbar-padding-x: 0;
+  --ar-navbar-padding-y: 0.75rem;
+  --ar-navbar-color: var(--ar-gray-800);
+  --ar-navbar-hover-color: var(--ar-primary);
+  --ar-navbar-disabled-color: var(--ar-gray-600);
+  --ar-navbar-active-color: var(--ar-primary);
+  --ar-navbar-brand-color: var(--ar-gray-800);
+  --ar-navbar-brand-hover-color: var(--ar-gray-800);
+  --ar-navbar-nav-link-padding-x: 1rem;
+  --ar-navbar-toggler-padding-y: 0.625rem;
+  --ar-navbar-toggler-padding-x: 0.25rem;
+  --ar-navbar-toggler-font-size: calc(var(--ar-body-font-size) * 1.125);
+  --ar-navbar-toggler-icon-bg: initial;
+  --ar-navbar-toggler-border-color: transparent;
+  --ar-navbar-toggler-border-radius: 0;
+  --ar-navbar-toggler-transition: box-shadow 0.15s ease-in-out;
+  position: relative;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
-  padding: 1rem;
-  color: #fff;
+  justify-content: space-between;
+  padding: var(--ar-navbar-padding-y) var(--ar-navbar-padding-x);
 }
 
-.nav a {
-  margin: 0 1rem;
+.navbar-collapse {
+  background-color: transparent !important; /* FIXED */
+  border-radius: 0;                         /* FIXED */
+  margin-top: 0;                            /* FIXED */
+  border: none;                             /* FIXED */
+  box-shadow: none;                         /* Optional but helpful */
+}
+
+
+.navbar-nav {
+  --ar-nav-link-padding-x: 0;
+  --ar-nav-link-padding-y: 0.725rem;
+  --ar-nav-link-font-weight: 500;
+  --ar-nav-link-color: var(--ar-navbar-color);
+  --ar-nav-link-hover-color: var(--ar-navbar-hover-color);
+  --ar-nav-link-disabled-color: var(--ar-navbar-disabled-color);
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  padding: 0.75rem 1.25rem;
+}
+
+.mainnav .nav-link:hover {
+  text-shadow: 0 2px 0 #f50685; /* pink drop shadow only under text */
+  background: none;             /* no full-box background */
+}
+
+.navbar-nav .nav-link:hover {
+  background: none !important;
+  text-shadow: 0 2px 0 #f50685;
+}
+
+.navbar-nav .nav-link {
+  position: relative;
+  display: inline; /* <<< important */
+  font-family: "Bangers", sans-serif;
+  font-size: 1.875rem;
+  text-transform: uppercase;
   color: white;
-  text-decoration: none;
-  font-weight: bold;
-  font-family: "Bangers";
+  padding: 0; /* remove any padding */
+  background: none; /* prevent inherited pink bg */
+  transition: background 0.2s ease-in-out;
 }
 
-.nav a:hover {
-  color: #ff37f2;
+.navbar-nav .nav-link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0.1em;
+  width: 100%;
+  height: 60%;
+  background-color: #f50685;
+  z-index: -1;
+  transition: transform 0.3s ease-in-out;
+  transform: scaleY(0);
+  transform-origin: bottom;
 }
 
-.social-icons a {
-  margin: 0 0.5rem;
-  color: white;
-  transition: color 0.3s;
+.navbar-nav .nav-link:hover::before {
+  transform: scaleY(1);
 }
 
-.social-icons a:hover {
-  color: #ff37f2;
+/* Mobile behavior: align icons to left, add spacing */
+@media (max-width: 991.98px) {
+  .social-icons {
+    justify-content: flex-start !important;
+    padding-left: 1.25rem;
+    margin-top: 2rem;
+  }
+
+  .social-icons .nav-item {
+    margin-right: 1rem;
+  }
+
+  .social-icons .nav-link {
+    font-size: 1.5rem;
+  }
+}
+
+/* DESKTOP: Restore tighter spacing like reference image */
+@media (min-width: 992px) {
+  .social-icons {
+    margin-left: 0;
+    padding-left: 0;
+    margin-top: 0;
+    justify-content: flex-end !important;
+  }
+
+  .social-icons .nav-link svg {
+    font-size: 2rem; /* default is ~1.5rem */
+  }
+
+  .social-icons .nav-item {
+    margin-right: 4px; /* reduced spacing between icons */
+  }
+
+  .social-icons .nav-item:last-child {
+    margin-right: 0; /* remove extra margin from the last icon */
+  }
+}
+
+/* -------------------- BODY STYLES -------------------- */
+body {
+  font-family: 'Verdana', sans-serif;
+  font-size: var(--ar-root-font-size);
+  font-weight: var(--ar-body-font-weight);
+  line-height: var(--ar-body-line-height);
+  color: var(--ar-body-color);
+  text-align: var(--ar-body-text-align);
+  background: radial-gradient(circle, #8a2df8 0%, #f50685 100%);
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+:root {
+  --ar-gray-600: #858c97;
+  --ar-gray-800: #434a57;
+  --ar-gray-900: #121519;
+  --ar-primary: #f50685;
+  --ar-light: #FFFFFF;
+  --ar-dark: #121519;
+  --ar-primary-rgb: 245, 6, 133;
+  --ar-light-rgb: 255, 255, 255;
+  --ar-dark-rgb: 18, 21, 25;
+  --ar-font-sans-serif: "Inter", sans-serif;
+  --ar-root-font-size: 1rem;
+  --ar-body-font-family: var(--ar-font-sans-serif);
+  --ar-body-font-size: 1rem;
+  --ar-body-font-weight: 400;
+  --ar-body-line-height: 1.5;
+  --ar-body-color: #576071;
+  --ar-body-bg: #FFFFFF;
+  --ar-heading-color: var(--ar-gray-900);
+  --ar-link-color-rgb: 245, 6, 133;
+  --ar-link-hover-color-rgb: 205, 5, 111;
+  --ar-border-width: 1px;
+  --ar-border-color: #e3e9ef;
+  --ar-border-radius: 1rem;
+  --ar-border-radius-sm: calc(var(--ar-border-radius) * 0.75);
+  --ar-border-radius-lg: calc(var(--ar-border-radius) * 1.125);
+  --ar-border-radius-xl: calc(var(--ar-border-radius) * 1.5);
+  --ar-border-radius-xxl: calc(var(--ar-border-radius) * 2.25);
+  --ar-border-radius-2xl: var(--ar-border-radius-xxl);
+  font-size: var(--ar-root-font-size);
+  --ar-user-selection-color: rgba(var(--ar-primary-rgb), 0.22);
+  --ar-heading-link-color: var(--ar-gray-800);
+  --ar-heading-link-hover-color: var(--ar-primary);
+  --ar-blockquote-color: var(--ar-gray-900);
+  --ar-blockquote-footer-color: var(--ar-gray-900);
+  --ar-blockquote-mark-color: var(--ar-primary);
+  --ar-nav-link-color: var(--ar-gray-800);
+  --ar-link-hover-color-rgb: var(--ar-primary-rgb);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:selection {
+  background: var(--ar-user-selection-color);
 }
