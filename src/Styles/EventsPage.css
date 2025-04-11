@@ -1,34 +1,71 @@
 body {
   font-family: "Bangers";
   margin: 0;
-  height: 100vh; /* Ensures the gradient covers the full screen */
+  height: 100vh;
   background: linear-gradient(45deg, #ff69b4, #ffb6c1, #87cefa);
-  background-size: 400% 400%; /* Enlarges the background to allow smooth gradient animation */
+  background-size: 400% 400%;
   animation: gradientAnimation 10s ease infinite;
 }
 
-/* Define the animation */
 @keyframes gradientAnimation {
-0% {
-    background-position: 0% 50%;
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
-50% {
-    background-position: 100% 50%;
-}
-100% {
-    background-position: 0% 50%;
-}
-}
-  
-  .h1 {
-  font-size: 2.5rem;
+
+.events-page {
+  padding: 4rem 2rem;
   text-align: center;
-  font-family: "Bangers";
-  font-style: normal;
+}
+
+/* Flex container for title and logo */
+.events-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.events-header h1 {
+  font-size: 2.5rem;
+  color: white;
+  margin: 0;
+  flex: 1;
+  text-align: left;
+}
+
+.logo-container {
+  flex: 0 0 auto;
+  text-align: right;
+}
+
+.events-logo {
+  max-height: 120px;
+  height: auto;
+  width: auto;
+  object-fit: contain;
+}
+
+.event-description {
+  font-size: 1.25rem;
+  color: white;
+  max-width: 600px;
+  margin: 2rem auto 0;
+}
+
+@media (max-width: 768px) {
+  .events-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 
-  @media (min-width: 768px) {
-    main {
-      flex-direction: row;
-    }
+  .events-header h1 {
+    text-align: center;
   }
+
+  .logo-container {
+    text-align: center;
+  }
+}
