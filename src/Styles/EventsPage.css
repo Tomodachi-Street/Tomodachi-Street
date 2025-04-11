@@ -26,3 +26,9 @@ body {
   font-family: "Bangers";
   font-style: normal;
   }
+
+  @media (min-width: 768px) {
+    main {
+      flex-direction: row;
+    }
+  }

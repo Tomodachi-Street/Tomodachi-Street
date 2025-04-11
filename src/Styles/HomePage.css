@@ -105,3 +105,9 @@ body {
 .text-uppercase {
   text-transform: uppercase;
 }
+
+@media (min-width: 768px) {
+  main {
+    flex-direction: row;
+  }
+}

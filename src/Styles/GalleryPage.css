@@ -31,3 +31,9 @@ body {
     text-align: center;
     padding: 5rem 1rem;
   }
+
+  @media (min-width: 768px) {
+    main {
+      flex-direction: row;
+    }
+  }
