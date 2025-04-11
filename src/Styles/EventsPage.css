@@ -2,7 +2,7 @@ body {
   font-family: 'Avengeance', sans-serif;
   margin: 0;
   height: 100vh;
-  background: linear-gradient(45deg, #5c4033, #ffffff, #808080);
+  background: linear-gradient(45deg, #b08968, #d9c3a6, #808080);
   background-size: 400% 400%;
   animation: gradientAnimation 10s ease infinite;
 }
