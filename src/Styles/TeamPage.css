@@ -1,8 +1,7 @@
 body {
-    font-family: "Bangers";
-    margin: 0;
+    font-family: 'Avengeance', sans-serif;
     height: 100vh; /* Ensures the gradient covers the full screen */
-    background: linear-gradient(45deg, #ff69b4, #ffb6c1, #87cefa);
+    background: linear-gradient(45deg, #5c4033, #ffffff, #808080);
     background-size: 400% 400%; /* Enlarges the background to allow smooth gradient animation */
     animation: gradientAnimation 10s ease infinite;
 }
@@ -23,7 +22,7 @@ body {
   .h1 {
     font-size: 2.5rem;
     text-align: center;
-    font-family: "Bangers";
+    font-family: 'Avengeance', sans-serif;
     font-style: normal;
   }
   

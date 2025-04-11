@@ -1,8 +1,13 @@
-/* Google Fonts */
-@import url('https://fonts.googleapis.com/css?family=Bangers:400&display=swap');
-
 /* Bootstrap Icons */
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css");
+
+/* Fonts */
+@font-face {
+  font-family: 'Avengeance';
+  src: url('/fonts/AvengeanceMightiestAvenger.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 /* -------------------- HEADER STYLES -------------------- */
 .header-logo {
@@ -50,7 +55,7 @@
   position: absolute;
   height: 3px;
   width: 100%;
-  background-color: #f50685;
+  background-color: #493a3a;
   transition: all 0.3s ease-in-out;
   border-radius: 1px;
 }
@@ -140,19 +145,19 @@
 }
 
 .mainnav .nav-link:hover {
-  text-shadow: 0 2px 0 #f50685; /* pink drop shadow only under text */
+  text-shadow: 0 2px 0 #493a3a; /* pink drop shadow only under text */
   background: none;             /* no full-box background */
 }
 
 .navbar-nav .nav-link:hover {
   background: none !important;
-  text-shadow: 0 2px 0 #f50685;
+  text-shadow: 0 2px 0 #493a3a;
 }
 
 .navbar-nav .nav-link {
   position: relative;
   display: inline; /* <<< important */
-  font-family: "Bangers", sans-serif;
+  font-family: 'Avengeance', sans-serif;
   font-size: 1.875rem;
   text-transform: uppercase;
   color: white;
@@ -168,7 +173,7 @@
   bottom: 0.1em;
   width: 100%;
   height: 60%;
-  background-color: #f50685;
+  background-color: #493a3a;
   z-index: -1;
   transition: transform 0.3s ease-in-out;
   transform: scaleY(0);
@@ -220,13 +225,13 @@
 
 /* -------------------- BODY STYLES -------------------- */
 body {
-  font-family: 'Verdana', sans-serif;
+  font-family: 'Avengeance', sans-serif;
   font-size: var(--ar-root-font-size);
   font-weight: var(--ar-body-font-weight);
   line-height: var(--ar-body-line-height);
   color: var(--ar-body-color);
   text-align: var(--ar-body-text-align);
-  background: radial-gradient(circle, #8a2df8 0%, #f50685 100%);
+  background: linear-gradient(45deg, #5c4033, #ffffff, #808080);
   margin: 0;
   display: flex;
   flex-direction: column;
