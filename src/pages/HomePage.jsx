@@ -15,7 +15,7 @@ const HomePage = () => {
           <p>
           Established in 2024, Tomodachi Street is a DMV Community Based group that hosts events 
           through the local area within DC/MD/VA. Our interests cater to those who are into nerd 
-          culture alongside exploring what the area has to offer. We invite anyone to partake into 
+          culture alongside exploring what the area has to offer. We invite anyone to partake in 
           our hosted events and network to find new friends!
           </p>
         </div>
