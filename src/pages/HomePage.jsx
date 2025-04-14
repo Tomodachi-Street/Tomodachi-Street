@@ -13,7 +13,10 @@ const HomePage = () => {
             Tomodachi Street
           </h1>
           <p>
-            Home for some of the best meetup and hangout events in the DMV!
+            For those who want meet new people with similar Interests. Tomodachi Streets is always 
+            hosting fun events and activities to help you make new friends. Whether you're looking 
+            for a new social group, or a group your current friends can join, Tomodachi Street is 
+            the place for you.
           </p>
         </div>
       </div>

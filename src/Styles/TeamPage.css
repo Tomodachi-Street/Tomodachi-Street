@@ -40,7 +40,7 @@ body {
     width: 150px;
     height: 150px;
     object-fit: cover;
-    border: 3px solid #ff69b4;
+    border: 3px solid #8B4513; /* Brown border */
     margin-bottom: 10px;
 }
 
@@ -59,7 +59,7 @@ body {
 
 .team-social {
     font-size: 0.9rem;
-    color: #ff69b4;
+    color: #8B4513; /* Brown color for social icons */
 }
 
 .team-card {
@@ -123,6 +123,6 @@ body {
   }
   
   .team-logo {
-    filter: drop-shadow(0 0 6px #ff69b4);
+    filter: drop-shadow(0 0 6px #8B4513); /* Brown drop shadow */
   }
     
