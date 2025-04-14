@@ -60,12 +60,12 @@ const Header = () => {
               {/* Social icons always on right */}
               <ul className="navbar-nav social-icons ms-lg-auto d-flex flex-row flex-lg-row">
                 <li className="nav-item">
-                  <a className="nav-link text-white" href="https://instagram.com" target="_blank" rel="noreferrer">
+                  <a className="nav-link text-white" href="https://www.instagram.com/tomodachistreet/" target="_blank" rel="noreferrer">
                     <InstagramIcon />
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link text-white" href="https://discord.gg" target="_blank" rel="noreferrer">
+                  <a className="nav-link text-white" href="https://discord.gg/fB2VQyjWP2" target="_blank" rel="noreferrer">
                     <DiscordIcon />
                   </a>
                 </li>
