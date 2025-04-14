@@ -15,6 +15,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Engcomica';
+  src: url('/fonts/Engcomica.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* -------------------- HEADER STYLES -------------------- */
 .header-logo {
   height: 100%;

@@ -12,6 +12,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Engcomica';
+  src: url('/fonts/Engcomica.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   font-family: 'Avengeance', sans-serif;
 }

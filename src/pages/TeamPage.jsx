@@ -12,16 +12,16 @@ const TeamPage = () => {
         </div>
 
         <div className="row text-center justify-content-center">
-          <div className="col-md-3 team-card-wrapper">
-            <a href="https://instagram.com/mx.cyberagent" target="_blank" className="team-card">
-              <img src="/img/team-member1.jpg" alt="Derrick" className="rounded-circle team-img" />
-              <h3 className="team-name">DERRICK</h3>
-              <p className="team-role">Chief Technical Officer</p>
-              <p className="team-social">@mx.cyberagent</p>
-            </a>
-          </div>
-          <div className="col-md-3 team-card-wrapper">
-            <a href="https://instagram.com/auracaptor" target="_blank" className="team-card">
+        <div className="team-card-wrapper col-md-3">
+          <a href="https://instagram.com/mx.cyberagent" target="_blank" className="team-card text-decoration-none">
+            <img src="/img/team-member1.jpg" alt="Derrick" className="rounded-circle team-img" />
+            <h3 className="team-name">DERRICK</h3>
+            <p className="team-role">Chief Technical Officer</p>
+            <p className="team-social">@mx.cyberagent</p>
+          </a>
+        </div>
+        <div className="team-card-wrapper col-md-3">
+            <a href="https://instagram.com/auracaptor" target="_blank" className="team-card text-decoration-none">
               <img src="/img/team-member2.jpg" alt="Jon" className="rounded-circle team-img" />
               <h3 className="team-name">JON</h3>
               <p className="team-role">Chief Communication Officer</p>
