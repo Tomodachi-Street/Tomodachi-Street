@@ -10,6 +10,7 @@
   overflow-x: hidden;
   flex-wrap: wrap;
   text-align: center;
+  background: linear-gradient(45deg, #b08968, #d9c3a6, #808080);
 }
 
 .logo-container {
@@ -46,6 +47,7 @@
   font-size: 0.95rem;
   color: #ffffff;
   font-weight: 400;
+  font-family: 'SF Obliquities', sans-serif;
 }
 
 /* Medium+ screens: Side-by-side layout */

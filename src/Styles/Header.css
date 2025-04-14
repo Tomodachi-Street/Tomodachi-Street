@@ -8,6 +8,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'SF Obliquities';
+  src: url('/fonts/SFObliquities.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* -------------------- HEADER STYLES -------------------- */
 .header-logo {
   height: 100%;
@@ -189,6 +196,7 @@
     justify-content: flex-start !important;
     padding-left: 1.25rem;
     margin-top: 2rem;
+    margin-left: 1rem;
   }
 
   .social-icons .nav-item {
@@ -197,6 +205,10 @@
 
   .social-icons .nav-link {
     font-size: 1.5rem;
+  }
+
+  .navbar-nav.mainnav .nav-item {
+    margin-left: 1rem; /* Adjust as needed */
   }
 }
 
@@ -246,9 +258,7 @@ body {
   --ar-primary-rgb: 245, 6, 133;
   --ar-light-rgb: 255, 255, 255;
   --ar-dark-rgb: 18, 21, 25;
-  --ar-font-sans-serif: "Inter", sans-serif;
   --ar-root-font-size: 1rem;
-  --ar-body-font-family: var(--ar-font-sans-serif);
   --ar-body-font-size: 1rem;
   --ar-body-font-weight: 400;
   --ar-body-line-height: 1.5;

@@ -16,6 +16,7 @@ body {
 .events-page {
   padding: 4rem 2rem;
   text-align: center;
+  background: linear-gradient(45deg, #b08968, #d9c3a6, #808080);
 }
 
 /* Flex container for title and logo */
@@ -25,6 +26,9 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 1rem;
+  font-family: 'Avengeance', sans-serif;
+  text-align: left;
+  flex: 1;
 }
 
 .events-header h1 {
@@ -33,18 +37,7 @@ body {
   margin: 0;
   flex: 1;
   text-align: left;
-}
-
-.logo-container {
-  flex: 0 0 auto;
-  text-align: right;
-}
-
-.events-logo {
-  max-height: 120px;
-  height: auto;
-  width: auto;
-  object-fit: contain;
+  font-family: 'Avengeance', sans-serif;
 }
 
 .event-description {
@@ -65,7 +58,168 @@ body {
     text-align: center;
   }
 
-  .logo-container {
+  .events-page {
+    padding: 2rem;
+    color: white;
+  }
+  
+  .events-title {
+    font-size: 2.5rem;
     text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .event-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .event-card {
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 2px solid #8b5e3c; /* brown border */
+    border-radius: 12px;
+    padding: 1.5rem;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    font-family: "Avengeance", sans-serif;
+  }
+  
+  .event-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #fff;
+  }
+  
+  .event-time {
+    font-size: 1rem;
+    font-style: italic;
+    margin-bottom: 1rem;
+    color: #e0e0e0;
+  }
+  
+  .event-description {
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+    color: #ddd;
+  }
+  
+  .event-location {
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+    color: #fff;
+  }
+  
+  .event-link {
+    font-size: 0.9rem;
+    color: #ffcc99;
+    text-decoration: underline;
+  }
+  
+  .event-logo-container {
+    flex: 0 0 auto;
+    max-width: 200px;
+  }
+  
+  .event-logo {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+    max-height: 200px;
+  }
+  
+  .events-header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    padding: 2rem 1rem;
+  }
+}
+
+/* DESKTOP: Restore tighter spacing like reference image */
+@media (min-width: 992px) {
+  .events-page {
+    padding: 2rem;
+    color: white;
+  }
+  
+  .events-title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .event-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .event-card {
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 2px solid #8b5e3c; /* brown border */
+    border-radius: 12px;
+    padding: 1.5rem;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    font-family: "Avengeance", sans-serif;
+  }
+  
+  .event-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #fff;
+  }
+  
+  .event-time {
+    font-size: 1rem;
+    font-style: italic;
+    margin-bottom: 1rem;
+    color: #e0e0e0;
+  }
+  
+  .event-description {
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+    color: #ddd;
+  }
+  
+  .event-location {
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+    color: #fff;
+  }
+  
+  .event-link {
+    font-size: 0.9rem;
+    color: #ffcc99;
+    text-decoration: underline;
+  }
+  
+  .event-logo-container {
+    flex: 0 0 auto;
+    max-width: 200px;
+  }
+  
+  .event-logo {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+    max-height: 200px;
+  }
+  
+  .events-header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    padding: 2rem 1rem;
   }
 }

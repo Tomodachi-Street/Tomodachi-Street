@@ -6,9 +6,9 @@ const GalleryPage = () => {
     <div className="gallery-page">
       {/* Header Section */}
       <div className="gallery-header">
-        <h1 className="gallery-title text-white text-uppercase">Gallery</h1>
-        <div className="gallery-logo">
-          <img src="/img/logo.png" alt="Logo" />
+        <h1 className="gallery-title">Gallery</h1>
+        <div className="gallery-logo-container">
+          <img src="/img/logo.png" alt="Tomodachi Street Logo" className="gallery-logo" />
         </div>
       </div>
 

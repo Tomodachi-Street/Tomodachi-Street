@@ -13,10 +13,10 @@ const HomePage = () => {
             Tomodachi Street
           </h1>
           <p>
-            For those who want meet new people with similar Interests. Tomodachi Streets is always 
-            hosting fun events and activities to help you make new friends. Whether you're looking 
-            for a new social group, or a group your current friends can join, Tomodachi Street is 
-            the place for you.
+          Established in 2024, Tomodachi Street is a DMV Community Based group that hosts events 
+          through the local area within DC/MD/VA. Our interests cater to those who are into nerd 
+          culture alongside exploring what the area has to offer. We invite anyone to partake into 
+          our hosted events and network to find new friends!
           </p>
         </div>
       </div>

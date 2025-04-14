@@ -13,6 +13,10 @@ body {
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
+/* Global styles */
+.gallery-page {
+  background: linear-gradient(45deg, #b08968, #d9c3a6, #808080);
+}
 
 /* Header layout */
 .gallery-header {
@@ -27,6 +31,7 @@ body {
   font-size: 3rem;
   margin: 0;
   color: white;
+  font-family: 'Avengeance', sans-serif;
 }
 
 .gallery-logo img {
@@ -67,6 +72,20 @@ body {
   font-size: 1.5rem;
   color: white;
   text-transform: uppercase;
+  font-family: 'Avengeance', sans-serif;
+}
+
+.gallery-logo-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.gallery-logo {
+  max-width: 200px;
+  width: 100%;
+  height: auto;
+  max-height: 200px;
 }
 
 /* Responsive tweaks */
