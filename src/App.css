@@ -19,6 +19,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Bangers';
+  src: url('/fonts/Bangers.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   font-family: 'Avengeance', sans-serif;
 }
