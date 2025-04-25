@@ -21,6 +21,7 @@ const EventsPage = () => {
       convention: '/img/cards/convention.jpg',
       party: '/img/cards/party.jpg',
       bbq: '/img/cards/bbq.jpg',
+      beach: '/img/cards/beach.jpg',
     };
   
     // Extract type from summary
