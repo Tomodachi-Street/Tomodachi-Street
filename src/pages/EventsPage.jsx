@@ -18,9 +18,11 @@ const EventsPage = () => {
       warpedtour: '/img/cards/WarpedTour.jpg',
       concert: '/img/cards/concert.jpg',
       festival: '/img/cards/festival.jpg',
+      fireworks: '/img/cards/fireworks.jpg',
       convention: '/img/cards/convention.jpg',
       party: '/img/cards/party.jpg',
       bbq: '/img/cards/bbq.jpg',
+      bucees: '/img/cards/buc-ees.jpg',
       beach: '/img/cards/beach.jpg',
     };
   
