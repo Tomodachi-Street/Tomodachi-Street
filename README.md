@@ -1,13 +1,24 @@
 <div id="top"></div>
 
+<!-- PROJECT SHIELDS -->
+<!--
+*** I'm using markdown "reference style" links for readability.
+*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
+*** See the bottom of this document for the declaration of the reference variables
+*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
+*** https://www.markdownguide.org/basic-syntax/#reference-style-links
+-->
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
+<a href="https://github.com/Tomodachi-Street/Tomodachi-Street">
+    <img src="https://i.imgur.com/meGT6vF.jpeg" alt="Logo" width="150" height="150">
+  </a>
 <h3 align="center">Tomodachi Street</h3>
 
 </div>
 
-Welcome to the repository for the Tomodachi Street website, hosted at [tomodachistreet.org](https://tomodachistreet.org/). This portfolio showcases my skills as a developer, including my projects, resume, and contact options. It's designed to provide hiring managers and recruiters with a quick and convenient snapshot of my capabilities.
+Welcome to the repository for the Tomodachi Street website, hosted at [tomodachistreet.org](https://tomodachistreet.org/). This website showcases future Tomodachi Street events, connects to the discord bot for new members to join. And allows members to grab images from past events.
 
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -28,7 +39,9 @@ Welcome to the repository for the Tomodachi Street website, hosted at [tomodachi
 <!-- Features -->
 ## Features
 
-- **Add Later**
+- **Staff Page** - Meet the staff of Tomodachi Street and get into contact with them!
+- **Event Page** - Connected to the discord to showcase all upcoming Tomodachi Street events.
+- **Gallery Page** - Allow members to grab images from past events.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -88,3 +101,6 @@ This project is primarily for personal use and professional growth. However, fee
 Feel free to explore the codebase or visit the live site at [tomodachistreet.org](https://tomodachistreet.org/).
 
 <p align="right">(<a href="#top">back to top</a>)</p>
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
