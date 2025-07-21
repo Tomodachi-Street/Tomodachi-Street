@@ -24,6 +24,7 @@ const EventsPage = () => {
       bbq: '/img/cards/bbq.jpg',
       bucees: '/img/cards/buc-ees.jpg',
       beach: '/img/cards/beach.jpg',
+      arcade: '/img/cards/arcade.jpg',
     };
   
     // Extract type from summary
