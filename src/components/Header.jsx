@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import DiscordIcon from './DiscordIcon';
+import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import '../Styles/Header.css';
 import React, { useState } from 'react';
 
@@ -60,13 +61,18 @@ const Header = () => {
               {/* Social icons always on right */}
               <ul className="navbar-nav social-icons ms-lg-auto d-flex flex-row flex-lg-row">
                 <li className="nav-item">
-                  <a className="nav-link text-white" href="https://www.instagram.com/tomodachistreet/" target="_blank" rel="noreferrer">
+                  <a className="nav-link text-white" href="https://www.instagram.com/tomodachistreet/" target="_blank" rel="noreferrer" title='Follow us on Instagram!'>
                     <InstagramIcon />
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link text-white" href="https://discord.gg/fB2VQyjWP2" target="_blank" rel="noreferrer">
+                  <a className="nav-link text-white" href="https://discord.gg/fB2VQyjWP2" target="_blank" rel="noreferrer" title='Join our Discord!'>
                     <DiscordIcon />
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link text-white" href="https://calendar.google.com/calendar/embed?src=allaboutanything.dmv%40gmail.com&ctz=America%2FNew_York" target="_blank" rel="noreferrer" title='>Sync Our Events to your Google Calendar!'>
+                    <CalendarMonthIcon />
                   </a>
                 </li>
               </ul>
