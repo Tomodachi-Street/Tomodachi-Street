@@ -25,6 +25,7 @@ const EventsPage = () => {
       bucees: '/img/cards/buc-ees.jpg',
       beach: '/img/cards/beach.jpg',
       arcade: '/img/cards/arcade.jpg',
+      movie: '/img/cards/movies.png',
     };
   
     // Extract type from summary
