@@ -71,7 +71,7 @@ const Header = () => {
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link text-white" href="https://calendar.google.com/calendar/embed?src=allaboutanything.dmv%40gmail.com&ctz=America%2FNew_York" target="_blank" rel="noreferrer" title='>Sync Our Events to your Google Calendar!'>
+                  <a className="nav-link text-white" href="https://calendar.google.com/calendar/embed?src=allaboutanything.dmv%40gmail.com&ctz=America%2FNew_York" target="_blank" rel="noreferrer" title='Sync Our Events to your Google Calendar!'>
                     <CalendarMonthIcon />
                   </a>
                 </li>
