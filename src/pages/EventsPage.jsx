@@ -26,7 +26,7 @@ const EventsPage = () => {
       beach: '/img/cards/beach.jpg',
       arcade: '/img/cards/arcade.jpg',
       movie: '/img/cards/movies.png',
-      squidGames: '/img/cards/SquidGames.jpg',
+      squidGames: '/img/cards/squidGames.jpg',
       spongebob: '/img/cards/spongebob.jpg'
     };
   
