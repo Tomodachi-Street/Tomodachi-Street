@@ -13,7 +13,7 @@
   .card-flip-inner {
     position: relative;
     width: 100%;
-    height: 525px; /* Fixed card height */
+    height: 550px; /* Fixed card height */
     transition: transform 0.5s ease-in-out;
     transform-style: preserve-3d;
     border-radius: 15px;
