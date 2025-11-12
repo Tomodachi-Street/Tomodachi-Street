@@ -27,7 +27,8 @@ const EventsPage = () => {
       arcade: '/img/cards/arcade.jpg',
       movie: '/img/cards/movies.png',
       squidGames: '/img/cards/squidGames.jpg',
-      spongebob: '/img/cards/spongebob.jpg'
+      spongebob: '/img/cards/spongebob.jpg',
+      friendsgiving: '/img/cards/friendsgiving.png'
     };
   
     // Extract type from summary
