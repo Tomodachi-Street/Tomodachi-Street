@@ -1,8 +1,16 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import '../Styles/FlipCard.css';
 
 const EventCard = ({ event, image, title, dateString, timeString }) => {
   const [isFlipped, setIsFlipped] = useState(false);
+  const cardRef = useRef();
+
+  useEffect(() => {
+    if (cardRef.current) {
+      const { width, height } = cardRef.current.getBoundingClientRect();
+      console.log(`Card dimensions: ${width}px x ${height}px`);
+    }
+  }, []);
 
   const handleCardClick = () => {
     setIsFlipped(prev => !prev);
@@ -21,6 +29,7 @@ const EventCard = ({ event, image, title, dateString, timeString }) => {
   return (
     <div className="col-xl-6 col-lg-6 col-md-6 col-12 mb-5">
       <div
+        ref={cardRef}
         className={`card-flip border rounded overflow-hidden shadow ${isFlipped ? 'flipped' : ''}`}
         onClick={handleCardClick}
         style={{ cursor: 'pointer' }}
