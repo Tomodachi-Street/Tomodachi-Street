@@ -12,7 +12,7 @@ const EventsPage = () => {
       social: '/img/cards/social.jpg',
       gaming: '/img/cards/gaming.jpg',
       community: '/img/cards/community.jpg',
-      default: '/img/cards/default.jpg',
+      default: '/img/cards/default.png',
       spa: '/img/cards/spas.png',
       anime: '/img/cards/anime.jpg',
       warpedtour: '/img/cards/WarpedTour.jpg',
