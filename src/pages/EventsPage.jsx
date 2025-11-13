@@ -21,7 +21,7 @@ const EventsPage = () => {
       fireworks: '/img/cards/fireworks.jpg',
       convention: '/img/cards/convention.jpg',
       party: '/img/cards/party.jpg',
-      bbq: '/img/cards/bbq.jpg',
+      bbq: '/img/cards/bbq.png',
       bucees: '/img/cards/buc-ees.jpg',
       beach: '/img/cards/beach.jpg',
       arcade: '/img/cards/arcade.jpg',
