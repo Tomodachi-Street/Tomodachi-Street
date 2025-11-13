@@ -19,7 +19,7 @@ const EventsPage = () => {
       concert: '/img/cards/concert.jpg',
       festival: '/img/cards/festival.jpg',
       fireworks: '/img/cards/fireworks.jpg',
-      convention: '/img/cards/convention.jpg',
+      convention: '/img/cards/convention.png',
       party: '/img/cards/party.jpg',
       bbq: '/img/cards/bbq.png',
       bucees: '/img/cards/buc-ees.jpg',
